@@ -13,13 +13,13 @@ $timestamp = date("Y-m-d H:i:s");
 $logContent = json_encode($postData);
 
 // Store each JSON content in log.txt line by line
-$file = fopen("log.txt", "a");
+$file = fopen("ebcmlog.txt", "a");
 fwrite($file, $logContent . PHP_EOL);
 fclose($file);
 
-$file = fopen("Knorrfinal_log.txt","a");
-fwrite($file,"-------Campaign ID :".$camp_id.",".$timestamp.",".$msisdn.",".$trigger .",".$logContent.PHP_EOL);
-fclose($file);
+//$file = fopen("Knorrfinal_log.txt","a");
+//fwrite($file,"-------Campaign ID :".$camp_id.",".$timestamp.",".$msisdn.",".$trigger .",".$logContent.PHP_EOL);
+//fclose($file);
 
 //$language = $postData['language'];     //use the parameter name configured
 //$recipe = $postData['menu'];        //use the parameter name configured
